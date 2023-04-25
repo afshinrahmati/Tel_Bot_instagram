@@ -12,5 +12,6 @@ export class TelegramService {
   }
   onReceiveMessage = (msg: any) => {
     this.logger.debug(msg);
+    this.bot.sendMessage(190985799, 'سلام دلبر');
   };
 }
